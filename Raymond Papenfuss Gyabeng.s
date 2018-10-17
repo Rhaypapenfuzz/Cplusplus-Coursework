@@ -1,9 +1,8 @@
-# Raymond Papenfuss Gyabeng.s
-#
-# This is to Print out My name
-#
-         .data
-msg:   .asciiz "Raymond Papenfuss Gyabeng"
-	.extern foobar 4
-         .text
-        .globl main
+.data
+.text						# Assembly language instructions
+main:						# My main
+
+li $v0, 10				# system call code to exit program
+	syscall					# Exit program
+   
+   
