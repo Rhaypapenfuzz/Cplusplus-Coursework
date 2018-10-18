@@ -1,8 +1,8 @@
-.data
-.text						# Assembly language instructions
-main:						# My main
+.data			# Assembly language instructions
 
-li $v0, 10				# system call code to exit program
-	syscall					# Exit program
-   
-   
+at_sign:	.word 64
+
+.text
+.globl main
+
+main: 			# My main
