@@ -24,4 +24,11 @@ main: 			# My main
 	syscall
 	
 	sub $a0, $a0, 2		#Subtraction to get integer 4
+	syscall
+	
+	sub $a0, $a0, 2		#Subtraction to get integer 2
+	syscall
+	
+	addi $a0, $a0, 2	#Addition to get integer 4
+	syscall
 	  jr $ra		# return from main
