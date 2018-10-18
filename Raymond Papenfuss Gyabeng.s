@@ -31,4 +31,9 @@ main: 			# My main
 	
 	addi $a0, $a0, 2	#Addition to get integer 4
 	syscall
+	syscall			#Another System call to print same integer 4
+	
+	li $v0, 11 		#Changing pointing system call code from int to character
+	addi $a0, $a0, 6	#Addition to get newline character
+	syscall
 	  jr $ra		# return from main
