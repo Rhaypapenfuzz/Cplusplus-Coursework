@@ -16,4 +16,12 @@ main: 			# My main
 	
 	addi $a0, $a0, 2	#Addition to get integer 2
 	syscall
+	
+	addi $a0, $a0, 6 	#Addition to get integer 8
+	syscall
+	
+	sub $a0, $a0, 2		#Subtraction to get integer 6
+	syscall
+	
+	sub $a0, $a0, 2		#Subtraction to get integer 4
 	  jr $ra		# return from main
