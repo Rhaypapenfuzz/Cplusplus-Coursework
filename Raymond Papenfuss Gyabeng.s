@@ -42,4 +42,12 @@ main: 			# My main
 
 	addi $a0, $a0, 50	#Addition to get char small y
 	syscall
+	
+	sub $a0, $a0, 24	#Subtraction to get char small a
+	syscall
+
+	addi $a0, $a0, 1	#Addition to get char small b
+	syscall	
+
+	addi $a0, $a0, 3	#Addition to get char small e
 	  jr $ra		# return from main
