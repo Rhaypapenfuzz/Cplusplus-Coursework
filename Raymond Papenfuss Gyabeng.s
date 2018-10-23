@@ -50,4 +50,12 @@ main: 			# My main
 	syscall	
 
 	addi $a0, $a0, 3	#Addition to get char small e
+	syscall	
+
+	addi $a0, $a0, 9	#Addition to get char small n
+	syscall
+	
+	addi $a0, $a0, -7	#Addition of -7 to get char small g
+	syscall
+
 	  jr $ra		# return from main
