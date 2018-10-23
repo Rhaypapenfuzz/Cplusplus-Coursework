@@ -57,12 +57,17 @@ main: 			# My main
 	
 	addi $a0, $a0, -7	#Addition of -7 to get char small g
 	syscall
-	li $v0, 11		#system call code for printing character
 	
 	sub $a0, $a0, 59	#Subtraction of to get a comma
 	syscall			#Call Operating system to perform operation
 
 	sub $a0, $a0, 12	#Subtraction of to get space
 	syscall		
+	
+	addi $a0, $a0, 50	#Addition to get char Capital R
+	syscall
+
+	addi $a0, $a0, 15	#Addition to get char a
+	syscall
 
 	  jr $ra		# return from main
