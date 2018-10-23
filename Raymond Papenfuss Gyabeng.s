@@ -76,4 +76,11 @@ main: 			# My main
 	syscall
 	
 	addi $a0, $a0, 2	#Addition to get char o
+	syscall
+	
+	sub $a0, $a0,  1	#Subtraction to get char n
+	syscall
+	
+	sub $a0, $a0,  10	#Subtraction to get char d
+	syscall
 	  jr $ra		# return from main
