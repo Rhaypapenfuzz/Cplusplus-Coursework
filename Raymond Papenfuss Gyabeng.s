@@ -69,5 +69,11 @@ main: 			# My main
 
 	addi $a0, $a0, 15	#Addition to get char a
 	syscall
+	addi $a0, $a0, 24	#Addition to get char y
+	syscall
 
+	sub $a0, $a0, 12	#Addition to get char m
+	syscall
+	
+	addi $a0, $a0, 2	#Addition to get char o
 	  jr $ra		# return from main
