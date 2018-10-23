@@ -36,4 +36,10 @@ main: 			# My main
 	li $v0, 11 		#Changing pointing system call code from int to character
 	addi $a0, $a0, 6	#Addition to get newline character
 	syscall
+	
+	addi $a0, $a0, 61	#Addition to get char G(value 71)
+	syscall
+
+	addi $a0, $a0, 50	#Addition to get char small y
+	syscall
 	  jr $ra		# return from main
